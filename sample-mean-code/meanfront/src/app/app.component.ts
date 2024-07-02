@@ -13,21 +13,9 @@ import { MessageService } from './message.service';
 
 
 export class AppComponent implements OnInit{
-    message: string ='';
-  
-    constructor(private messageService: MessageService) { }
-  
-    sendMessage() {
-      this.messageService.sendMessage(this.message)
-        .subscribe(response => {
-          console.log('Response from server:', response);
-        });
-
-
-
-
-
-
+  ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 
   // title = 'my-first-app';
 
@@ -46,5 +34,5 @@ export class AppComponent implements OnInit{
   //   );
   // }
     }
-  }
+  
 
